@@ -30,7 +30,6 @@ fs, data = wavfile.read("D:\count.wav") # load the data
 -*- coding: utf-8 -*-
 NOTE: The WAV file must be 16bit-PCM format.
 It must be encoded at 22050Hz.
-Only mono audio files supported at this time.
 Steps to create the file in Audacity:
 1) Open the WAV file in Audacity.
 2) If it is stereo, split the Stereo track to mono
