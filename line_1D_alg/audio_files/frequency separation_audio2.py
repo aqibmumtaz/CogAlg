@@ -83,7 +83,7 @@ e = ifft(c)
 
 # - Taking ifft of salient frequencies to form time-domain channels
 
-n_channels = 10
+n_channels = 12,000
 channel_range = m//n_channels # for whole range take m=len(c)//2 instead of 250
 
 for i in range(0, n_channels-1, 1) :
