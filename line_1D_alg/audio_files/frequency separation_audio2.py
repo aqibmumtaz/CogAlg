@@ -32,16 +32,13 @@ e = Inverse Fourier Transform of the FFT
 '''
 fs, data = wavfile.read("D:\count.wav") # load the data
 '''
--*- coding: utf-8 -*-
-NOTE: The WAV file must be 16bit-PCM format.
-It must be encoded at 22050Hz.
+-*- coding: utf-8 -*-.
 Only mono audio files supported at this time.
 Steps to create the file in Audacity:
 1) Open the WAV file in Audacity.
 2) If it is stereo, split the Stereo track to mono
 3) Delete one of the channels or select only one
 4) Export the file, leave all the file meta data fields blank
-5) Set the Sample Format to 16-bit PCM
 6) Export the file, leave all the file meta data fields blank
 '''
 
