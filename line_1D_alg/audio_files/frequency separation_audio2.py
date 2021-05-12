@@ -84,7 +84,7 @@ e = ifft(c)
 # - Taking ifft of salient frequencies to form time-domain channels
 
 n_channels = 10
-channel_range = 250//n_channels # for whole range take m=len(c)//2 instead of 250
+channel_range = m//n_channels # for whole range take m=len(c)//2 instead of 250
 
 for i in range(0, n_channels-1, 1) :
 
@@ -116,7 +116,7 @@ for i in range(0, n_channels-1, 1) :
     plt.stem(freq, np.abs(sig_fft), 'b', \
                  markerfmt=" ", basefmt="-b")
     plt.title('Before filtering')
-    plt.xlim(0, 250 ) # for whole range take m instead of 250
+    plt.xlim(0, m) # for whole range take m instead of 250
     plt.xlabel('Frequency (Hz)')
     plt.ylabel('FFT Amplitude')
 
@@ -125,7 +125,7 @@ for i in range(0, n_channels-1, 1) :
     plt.stem(freq, np.abs(sig_fft_filtered), 'b', \
                  markerfmt=" ", basefmt="-b")
     plt.title('After filtering')
-    plt.xlim(0, 250) # for whole range take m instead of 250
+    plt.xlim(0, m) # for whole range take m instead of 250
     plt.xlabel('Frequency (Hz)')
     plt.ylabel('FFT Amplitude')
     plt.tight_layout()
